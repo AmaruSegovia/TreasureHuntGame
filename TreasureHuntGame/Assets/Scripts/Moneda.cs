@@ -6,7 +6,6 @@ public class Moneda : MonoBehaviour
 {
     public delegate void SumaMoneda(int moneda);
     public static event SumaMoneda sumaMoneda;
-
     [SerializeField] private int cantidadMonedas;
 
     private void OnTriggerEnter2D(Collider2D collision)

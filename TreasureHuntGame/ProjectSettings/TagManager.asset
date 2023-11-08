@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Orco
   - Jugador
+  - Espada
   layers:
   - Default
   - TransparentFX

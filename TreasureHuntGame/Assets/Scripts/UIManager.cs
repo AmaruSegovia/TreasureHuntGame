@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+    public DatosEscenas datosEscenas;
     private int totalMonedas;
     private int totalObjetos;
     private int precioObjeto;
@@ -15,13 +17,15 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Sprite corazonDesactivado, corazonActivado;
     [SerializeField] private GameObject cajaTexto;
     [SerializeField] private TMP_Text textoDialogo;
-
     [SerializeField] private GameObject panelEquipo;
 
     // Start is called before the first frame update
     private void Start()
     {
-        Moneda.sumaMoneda += SumarMonedas;
+        if(SceneManager.GetActiveScene().name == "Escena1")
+        {
+            Moneda.sumaMoneda += SumarMonedas;
+        }
     }
 
     private void SumarMonedas(int moneda)
