@@ -1,2 +1,2 @@
-# TreasureHuntGame
-Mi primer Juego 2D hecho con Unity
+# Un Mal dia
+Juego de zombies con inteligencia artificial
